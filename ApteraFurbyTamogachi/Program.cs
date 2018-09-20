@@ -10,6 +10,9 @@ namespace ApteraFurbyTamogachi
 
         static void Main(string[] args)
         {
+            var proxy = new StructureProxy();
+            var result = proxy.stuff().Result;
+            Console.WriteLine(result); 
             command = "";
             myFurby = new Tamogachi();
             myFurby.Health = 10;
